@@ -50,6 +50,7 @@ p {
 }
 body {
   background-image: url("https://i.pinimg.com/originals/8e/1f/46/8e1f46596275f9245c85827faafca0b5.png");
+  width:100px
 }
 .footer {
   background-color: none;
