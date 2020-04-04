@@ -17,6 +17,10 @@
 		</div>
 	</div>
 <p>Here you can find some great moments of Kobe Bryant's career</p>
+<button class="accordion">About him</button>
+<div class="panel">
+<p>Kobe Bryant had a 20 year career playing basketbal During which he had an amazing time. After his career he started focussing on his family. He made books and made one film about his love for the game. Kobe and his wife Vanessa Bryant have 4 girls. One had grown up to be an basketbal player and one with potential. She was Gianni, she played for the mamba sports academy at the mamba facility. Kobe and Gigi, the nickname for Gianni, died in a helicopter crash while on their way to the mamba facility.</p>
+</div>
 <button class="accordion">Stats</button>
 <div class="panel">
 </div>
@@ -28,6 +32,22 @@
 <button class="accordion">Highlights</button>
 <div class="panel">
 </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 <footer>
 <div class="footer">
